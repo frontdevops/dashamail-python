@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dasha-mail"
+version = "0.1.0"
+description = "Modern async Python client for DashaMail API"
+authors = [
+    { name="Alexander Majorov", email="alexander.majorov@gmail.com" },
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp>=3.8.0"
+]
+
+[project.optional-dependencies]
+flask = [
+    "Flask>=2.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/your-vendor/dasha-mail-python-client"
